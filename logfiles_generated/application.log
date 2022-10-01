@@ -1,0 +1,48 @@
+10-01-2022 19:19:40 LogManager.java FATAL [main] Framework_Logger - ======================== onStart :-AutomationFramework========================
+10-01-2022 19:19:47 LogManager.java INFO  [TestNG-test=AutomationFramework-2] Framework_Logger - Driver Initialized
+10-01-2022 19:19:47 LogManager.java INFO  [TestNG-test=AutomationFramework-2] Framework_Logger - org.anytest.test.pages.LoginPageTest - loadUrl started...
+10-01-2022 19:19:47 LogManager.java INFO  [TestNG-test=AutomationFramework-3] Framework_Logger - Driver Initialized
+10-01-2022 19:19:47 LogManager.java INFO  [TestNG-test=AutomationFramework-3] Framework_Logger - org.anytest.test.pages.LoginPageTest - testLogin started...
+10-01-2022 19:19:47 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Driver Initialized
+10-01-2022 19:19:47 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - org.anytest.base.BaseTest - loadUrl started...
+10-01-2022 19:19:48 LogManager.java INFO  [TestNG-test=AutomationFramework-2] Framework_Logger - URL Loaded
+10-01-2022 19:19:48 LogManager.java INFO  [TestNG-test=AutomationFramework-2] Framework_Logger - org.anytest.test.pages.LoginPageTest - loadUrl is PASSED...
+10-01-2022 19:19:48 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - URL Loaded
+10-01-2022 19:19:48 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - org.anytest.base.BaseTest - loadUrl is PASSED...
+10-01-2022 19:19:48 LogManager.java ERROR [TestNG-test=AutomationFramework-3] Framework_Logger - org.anytest.test.pages.LoginPageTest - testLogin is FAILED...
+10-01-2022 19:19:48 LogManager.java INFO  [TestNG-test=AutomationFramework-2] Framework_Logger - Driver Closed
+10-01-2022 19:19:49 LogManager.java INFO  [TestNG-test=AutomationFramework-3] Framework_Logger - Driver Closed
+10-01-2022 19:19:49 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Driver Closed
+10-01-2022 19:19:49 LogManager.java FATAL [main] Framework_Logger - ======================== onFinish :-AutomationFramework========================
+10-01-2022 19:20:09 LogManager.java FATAL [main] Framework_Logger - ======================== onStart :-AutomationFramework========================
+10-01-2022 19:20:14 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Driver Initialized
+10-01-2022 19:20:14 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - org.anytest.test.pages.LoginPageTest - testLogin started...
+10-01-2022 19:20:15 LogManager.java ERROR [TestNG-test=AutomationFramework-1] Framework_Logger - org.anytest.test.pages.LoginPageTest - testLogin is FAILED...
+10-01-2022 19:20:16 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Driver Closed
+10-01-2022 19:20:16 LogManager.java FATAL [main] Framework_Logger - ======================== onFinish :-AutomationFramework========================
+10-01-2022 19:20:53 LogManager.java FATAL [main] Framework_Logger - ======================== onStart :-AutomationFramework========================
+10-01-2022 19:20:59 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Driver Initialized
+10-01-2022 19:20:59 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - org.anytest.test.pages.LoginPageTest - testLogin started...
+10-01-2022 19:21:00 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - org.anytest.test.pages.LoginPageTest - testLogin is PASSED...
+10-01-2022 19:21:01 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Driver Closed
+10-01-2022 19:21:01 LogManager.java FATAL [main] Framework_Logger - ======================== onFinish :-AutomationFramework========================
+10-01-2022 19:24:10 LogManager.java FATAL [main] Framework_Logger - ======================== onStart :-AutomationFramework========================
+10-01-2022 19:24:16 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Driver Initialized
+10-01-2022 19:24:16 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - org.anytest.test.pages.LoginPageTest - testLogin started...
+10-01-2022 19:24:17 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Login Link is clicked
+10-01-2022 19:24:17 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Username : tyitproject2019@gmail.com is entered.
+10-01-2022 19:24:17 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Password: Jan@2022 is entered
+10-01-2022 19:24:18 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Login Button is clicked
+10-01-2022 19:24:18 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - org.anytest.test.pages.LoginPageTest - testLogin is PASSED...
+10-01-2022 19:24:19 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Driver Closed
+10-01-2022 19:24:19 LogManager.java FATAL [main] Framework_Logger - ======================== onFinish :-AutomationFramework========================
+10-01-2022 19:31:20 LogManager.java FATAL [main] Framework_Logger - ======================== onStart :-AutomationFramework========================
+10-01-2022 19:31:26 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Driver Initialized
+10-01-2022 19:31:26 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - org.anytest.test.pages.LoginPageTest - testLogin started...
+10-01-2022 19:31:27 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Login Link is clicked
+10-01-2022 19:31:27 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Username : tyitproject2019@gmail.com is entered.
+10-01-2022 19:31:27 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Password: Jan@2022 is entered
+10-01-2022 19:31:28 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Login Button is clicked
+10-01-2022 19:31:28 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - org.anytest.test.pages.LoginPageTest - testLogin is PASSED...
+10-01-2022 19:31:29 LogManager.java INFO  [TestNG-test=AutomationFramework-1] Framework_Logger - Driver Closed
+10-01-2022 19:31:29 LogManager.java FATAL [main] Framework_Logger - ======================== onFinish :-AutomationFramework========================
