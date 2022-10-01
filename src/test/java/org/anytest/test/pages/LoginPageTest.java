@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class LoginPageTest extends BaseTest {
 
 
-    @Test
+    @Test(testName = "Login Page Test", description = "Verify user is able to login with correct credentials")
     public  void testLogin()
     {
         new LoginPage()
