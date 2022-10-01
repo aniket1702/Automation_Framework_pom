@@ -26,4 +26,7 @@ public interface ConfigReader extends Config {
     @Key("password")
     String password();
 
+    @Key("overrideReport")
+    String overrideReport();
+
 }
