@@ -1,42 +1,53 @@
 package org.anytest.listener;
 
+import org.anytest.extentreport.ExtentReport;
 import org.anytest.logger.Framework_Logger;
 import org.anytest.logger.LogManager;
 import org.anytest.logger.enums.LogType;
 import org.testng.*;
 
+import java.io.IOException;
+
 public class Listener implements ITestListener, ISuiteListener {
     @Override
     public void onStart(ISuite suite)
     {
+        ExtentReport.initReport();
         LogManager.propertyConfigurator();
     }
 
     @Override
     public void onFinish(ISuite suite) {
-      //not implemented
+
+        try {
+            ExtentReport.flushReport();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     public void onTestStart(ITestResult result) {
-        Framework_Logger.log(LogType.PASS,result.getMethod().getTestClass().getName()+" - " +result.getMethod().getMethodName()+" started...");
+        ExtentReport.createTest(result.getMethod().getConstructorOrMethod().getMethod());
+        Framework_Logger.log(LogType.PASS_EXTENT_AND_LOG,
+                result.getMethod().getTestClass().getName().substring(23)+" - " +result.getMethod().getMethodName()+" method started...");
 
     }
 
     @Override
-    public void onTestSuccess(ITestResult result) {
-        Framework_Logger.log(LogType.PASS, result.getMethod().getTestClass().getName()+" - " +result.getMethod().getMethodName()+" is PASSED...");
+    public void onTestSuccess(ITestResult result)
+    {
+        Framework_Logger.log(LogType.PASS_EXTENT_AND_LOG, result.getMethod().getTestClass().getName().substring(23) + " - " + result.getMethod().getMethodName() + " is PASSED...");
     }
-
     @Override
     public void onTestFailure(ITestResult result) {
-        Framework_Logger.log(LogType.FAIL, result.getMethod().getTestClass().getName()+" - " +result.getMethod().getMethodName()+" is FAILED...");
-    }
+        Framework_Logger.log(LogType.FAIL_EXTENT_AND_LOG, result.getMethod().getTestClass().getName().substring(23)+" - " +result.getMethod().getMethodName()+" is FAILED...");
+       }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        Framework_Logger.log(LogType.SKIP,result.getMethod().getTestClass().getName()+" - " +result.getMethod().getMethodName()+" is SKIPPED...");
-    }
+        Framework_Logger.log(LogType.SKIP_EXTENT_AND_LOG,result.getMethod().getTestClass().getName().substring(23)+" - " +result.getMethod().getMethodName()+" is SKIPPED...");
+          }
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
@@ -75,6 +86,5 @@ public class Listener implements ITestListener, ISuiteListener {
     @Override
     public void onFinish(ITestContext context) {
         Framework_Logger.log(LogType.FATAL,"======================== onFinish :-" + context.getName() + "========================");
-
     }
 }
