@@ -8,6 +8,7 @@
         <classes>
             <class name="org.anytest.base.BaseTest"/>
             <class name="org.anytest.test.pages.LoginPageTest"/>
+            <class name="org.anytest.test.pages.BooksPageTest"/>
         </classes>
     </test>
 </suite>
