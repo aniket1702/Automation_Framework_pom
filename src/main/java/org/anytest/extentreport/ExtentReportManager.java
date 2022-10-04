@@ -2,8 +2,6 @@ package org.anytest.extentreport;
 
 import com.aventstack.extentreports.ExtentTest;
 
-import java.util.Objects;
-
 public final class ExtentReportManager {
     private ExtentReportManager(){}
 
