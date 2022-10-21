@@ -36,13 +36,28 @@ public final class ExtentReport {
                             ViewName.EXCEPTION,
                             ViewName.LOG
                     }).apply();
-            spark.loadXMLConfig(new File(Constants.getExtentReportXMLPath()));
+
             extent.attachReporter(spark);
 
 
             spark.config().setTheme(Theme.STANDARD);
             spark.config().setDocumentTitle(ConfigFactory.getConfig().websiteName());
             spark.config().setReportName(ConfigFactory.getConfig().websiteName());
+            spark.config().setJs("document.getElementsByClassName('card-body')[2].style.backgroundColor='#28a745';" +
+                                 "document.getElementsByClassName('card-body')[3].style.backgroundColor='#ff5722';" +
+                                 "document.getElementsByClassName('card-body')[3].children[0].classList.remove('text-fail'); " +
+                                 "document.getElementsByClassName('card-body')[2].children[0].classList.remove('text-pass'); " +
+                                 "document.getElementsByClassName('card-body')[2].children[0].style.color='#fff';" +
+                                 "document.getElementsByClassName('card-body')[3].children[0].style.color='#fff';" +
+                                 "document.getElementsByClassName('card-body')[2].children[1].style.color='#fff';" +
+                                 "document.getElementsByClassName('card-body')[3].children[1].style.color='#fff';" +
+                                 "document.getElementsByClassName('card-body')[0].children[0].style.color='#28a745';" +
+                                 "document.getElementsByClassName('card-body')[0].children[1].style.color='#28a745';" +
+                                 "document.getElementsByClassName('card')[0].style.borderColor='#28a745';" +
+                                 "document.getElementsByClassName('card-body')[1].children[0].style.color='#ff5722';" +
+                                 "document.getElementsByClassName('card-body')[1].children[1].style.color='#ff5722';" +
+                                 "document.getElementsByClassName('card')[1].style.borderColor='#ff5722'"
+                                );
 
 
 

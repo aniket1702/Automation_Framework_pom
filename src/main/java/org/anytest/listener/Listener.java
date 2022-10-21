@@ -1,12 +1,10 @@
 package org.anytest.listener;
 
 import org.anytest.extentreport.ExtentReport;
-import org.anytest.extentreport.ExtentReportManager;
 import org.anytest.logger.Framework_Logger;
 import org.anytest.logger.LogManager;
 import org.anytest.logger.enums.LogType;
 import org.testng.*;
-import org.testng.annotations.Test;
 
 import java.io.IOException;
 

@@ -29,7 +29,6 @@ public final class Driver {
     {
         if(Objects.nonNull(DriverManager.getDriver()))
         {
-            DriverManager.getDriver().manage().deleteAllCookies();
             DriverManager.getDriver().close();
             DriverManager.getDriver().quit();
             DriverManager.unload();

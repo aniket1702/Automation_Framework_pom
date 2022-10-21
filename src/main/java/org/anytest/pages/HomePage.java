@@ -9,7 +9,6 @@ public class HomePage {
     public HomePage()
     {
         this.menuComponents = new MenuComponents();
-
     }
 
     public BooksPage navigateToBooksPage()
